@@ -3,36 +3,164 @@
 	padding:0;
 	box-sizing: border-box;
 }
-.main{
-	background-color: black;
-	padding: 5px;width: 520px;
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+
 }
-li{
-	margin-top: 10px;
+.container{
+	width: 620px;
+	background-color: black;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+.main{
+	padding: 5px;width: 560px;
+	display:inline-block;
+}
+ul{
+	text-align: top;
+}
+li{margin-top: 10px;
+	color: white;
+	text-align: center;
+	height: 32px;
 	padding:7px;
-	font-weight: bold;
-	background-color: red;
-	height: 30px;
-	width: 30px;
+	font-weight: 1000;
+	background-color: #373f4c;
+	width: 32px;
 	border-radius: 5px;
 	display: inline-block;
 }
-.tab{
+.Backspace{	
+	background-position: 3px -152px;
+}
+.specialKey{
+	vertical-align: top;
+	background-color:#1b222d; 
+	background-image: url(sprite1.png);
+	background-repeat: no-repeat;
+}
+.Delete{
+	background-position: -0px -192px;
+	background-repeat: no-repeat;
+}
+.Tab{
+	
+	background-position: 5px 5px;
 	width: 60px;
 }
-.caps{
-	width: 65px;
+.Enter{
+	background-position: 0 -510px;
+	height: 75px;
+	width: 40px;
+	margin-left: 20px;
 }
-.shift{
+.Enter:before{
+	margin-left: -20px;
+	margin-top: -7px;
+	border-radius: 5px;
+	content: '';
+	width: 20px;
+	height: 40px;
+	background-color: #1b222d;
+	display: block;
+
+}
+.row1, .row2, .row3, .row4, .row5{
+	justify-content: space-between;
+	display: flex;
+
+}
+.row3{
+width: 505px;
+margin-top: -43px;
+}
+.CapsLock{
+	width: 75px;
+	background-position: 5px -35px;
+}
+.Shift{
 	width: 55px;
+	background-position: 5px -75px;
 }
-.space{
+.Shift1{
+	width: 85px;
+	
+}
+.Space{
+	background-color:#373f4c;
+	vertical-align: top;
 	margin-top: 10px;
-	width: 150px;
+	width: 230px;
 }
 .Control{
 	width: 60px;
+	background-position: 3px -420px;
+}
+.Alt{
+	background-position: 0px -460px;
+}
+.ArrowLeft{
+	background-position: 5px -640px;
+}
+.ArrowRight{
+background-position: 5px -672px;
+}
+.ArrowUp{
+background-position: 2px -712px;
+}
+.ArrowDown{
+background-position: 2px -752px;
+}
+.Meta{
+background-position: 0px -114px;	
 }
 .active{
-	background-color: white
+	color: black;
+	background-color: white;
+}
+.rightKeys{
+	margin-top: 5px;
+	width: 50px;
+	display:inline-block;
+	vertical-align: top;
+}
+.rightKeys li{
+	color: white;
+	height: 32px;
+	margin-top: 10px;
+	padding:7px;
+	width: 50px;
+		border-radius: 5px;
+	display: inline-block;
+}
+.Cross{
+background-position: 13px -270px;
+}
+.rigthRow2 li{
+	margin-right: 2px;
+	width: 20px;
+}
+.rigthRow3 li,.rigthRow4 li{
+
+	text-align:center;
+	background-color:#1b222d;
+	border-radius: 5px;
+	height: 32px;
+	font-weight: 1000; }
+.cursor{
+	background-position: 3px -309px;
+}
+.navKey{
+	background-position: 0px -347px;
+}
+.line{
+	background-position: 13px -383px;
+}
+.text{
+	width: 300px;
+	margin:0 auto;
+	height: 70px;
 }

@@ -6,8 +6,10 @@
    <link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
+ 	<div class="wrapper">
+ 	<div class="container" id ="container">
  	<div class="main" id = 'main'>
- 		<ul id ='list'>
+ 		<ul  class="row1">
  		<li class="`">`</li>
  		<li class="1">1</li>
  		<li class="2">2</li>
@@ -19,13 +21,15 @@
  		<li class="8">8</li>
  		<li class="9">9</li>
  		<li class="0">0</li>
- 		<li class="-"><i class="fa fa-minus" aria-hidden="true"></i></li>
+ 		<li class="-">-</li>
  		<li class="=">=</li>
- 		<li class="Backspace">Back</li>
- 		<li class="Delete"><i class="fa fa-window-close-o" aria-hidden="true"></i></li>
- 		<!-- ----------------------------- -->
- 		<li class="Tab tab">-></li>
- 		<li class="q">q</li>q
+ 		<li class="Backspace specialKey"></li>
+ 		<li class="Delete specialKey"></li>
+ 	</ul>
+ 		<div class="rowEnter">
+ 		<ul class="row2">
+ 		<li class="Tab specialKey"></li>
+ 		<li class="q">q</li>
  		<li class="w">w</li>
  		<li class="e">e</li>
  		<li class="r">r</li>
@@ -37,9 +41,11 @@
  		<li class="p">p</li>
  		<li class="[">[</li>
  		<li class="]">]</li>
- 		<li>f</li>
- 		<!-- ----------------------------- -->
- 		<li class="caps CapsLock">-></li>
+ 		<li class="Enter specialKey"></li>
+ 	</ul>
+ 		
+ 		<ul class="row3 ">
+ 		<li class="CapsLock specialKey"></li>
  		<li class="a">a</li>
  		<li class="s">s</li>
  		<li class="d">d</li>
@@ -52,9 +58,10 @@
  		<li class=";">;</li>
  		<li class="'">'</li>
  		<li class="/">/</li>
- 		<li>f</li>
- 		<!-- ----------------------------- -->
- 		<li class="Shift shift">-></li>
+ 	</ul>
+ 		</div>
+ 		<ul  class="row4">
+ 		<li class="Shift specialKey"></li>
  		<li class="<"><</li>
  		<li class="z">z</li>
  		<li class="x">x</li>
@@ -65,24 +72,55 @@
  		<li class="m">m</li>
  		<li class=",">,</li>
  		<li class=".">.</li>
- 		<li class="Shift shift">-></li>
- 		<!-- ----------------------------- -->
- 		<li class="Control">Ctr</li>
- 		<li class="Meta"><i class="fa fa-life-ring" aria-hidden="true"></i></li>
- 		<li class="Alt">Alt</li>
- 		<li class = 'space'>d</li>
- 		<li class="Alt">Alt</li>
- 		<li class="ArrowLeft"><i class="fa fa-arrow-left" aria-hidden="true"></i></li>
- 		<li class="ArrowRight"><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
- 		
- 		<li class="ArrowUp"><i class="fa fa-arrow-up" aria-hidden="true"></i></li>
- 		<li class="ArrowDown"><i class="fa fa-arrow-down" aria-hidden="true"></i></li>
-
-
+ 		<li class="Shift Shift1 specialKey"></li>
  	</ul>
+ 	
+ 		<ul class="row5">
+ 		<li class="Control specialKey"></li>
+ 		<li class="Meta specialKey"></li>
+ 		<li class="Alt specialKey"></li>
+ 		<li class = 'Space'></li>
+ 		<li class="Alt specialKey"></li>
+ 		<li class="ArrowLeft specialKey"></li>
+ 		<li class="ArrowRight specialKey"></li>
+ 		
+ 		<li class="ArrowUp specialKey"></li>
+ 		<li class="ArrowDown specialKey"></li>
+ 	</ul>
+</div>
+<div class="rightKeys" id="rightKeys">
+	<div class="rigthRow1">
+		<ul>
+			<li class="Cross specialKey"></li>
+		</ul>
+	</div>
+	<div class="rigthRow2">
 
+		<ul>
+			<li class="cursor specialKey"></li>
+			<li class="navKey specialKey"></li>
+		</ul>
+	</div>
+	<div class="rigthRow3">
+		<ul>
+			<li>Abc</li>
+		</ul>
+	</div>
+	<div class="rigthRow4">
+		<ul>
+			<li>123</li>
+		</ul>
+	</div>
+	<div class="rigthRow5">
+		<ul>
+			<li class="specialKey line"></li>
+		</ul>
+	</div>
+</div>
  	</div>
- 	<input type="text" name="text" id = 'input'>
+ 	<textarea class = 'text' id = 'input' autofocus></textarea>
+</div>
+<p>Для переключения языка - Ctrl+Shift</p>
  	<script type="text/javascript" src="myscript.js"></script>
  </body>
 </html>
